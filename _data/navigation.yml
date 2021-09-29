@@ -1,0 +1,6 @@
+- name: Start
+  link: /
+- name: Om
+  link: /om
+- name: Kontakt
+  link: /kontakt

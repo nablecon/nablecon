@@ -1,0 +1,87 @@
+---
+layout: index
+---
+
+<section class="py-5 bg-dark">
+  <div class="container px-5">
+    <!-- Contact form-->
+
+    <div class="bg-dark rounded-3 py-5 px-4 px-md-5 mb-5">
+      <div class="text-center mb-5 text-white">
+        <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+        {{ content }}
+      </div>
+
+      <div class="row gx-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <form accept-charset="UTF-8" action="https://getform.io/f/{{ site.formendpoint }}"
+          method="POST">
+            <!-- Name input-->
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Fyll i ditt namn..."
+              />
+              <label for="name">Namn</label>
+            </div>
+            <!-- Company input-->
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                id="company"
+                name="company"
+                type="text"
+                placeholder="Fyll i företag..."
+              />
+              <label for="company">Företag</label>
+            </div>
+            <!-- Email address input-->
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@example.com"
+              />
+              <label for="email">E-post</label>
+            </div>
+            <!-- Phone number input-->
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                id="phone"
+                type="tel"
+                placeholder="070-123 45 67"
+              />
+              <label for="phone">Telefon</label>
+            </div>
+            <!-- Message input-->
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                id="message"
+                type="text"
+                placeholder="Beskriv ditt ärende här..."
+                style="height: 10rem"
+              ></textarea>
+              <label for="message">Meddelande</label>
+            </div>
+            <div class="d-grid">
+              <button
+                class="btn bg-dark bg-gradient btn-lg text-white"
+                id="submitButton"
+                type="submit"
+              >
+                Skicka
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
